@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LmaxClientLibrary", "LmaxClientLibrary.csproj", "{63547B0F-59CC-493B-B578-518B07AF2A61}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{63547B0F-59CC-493B-B578-518B07AF2A61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63547B0F-59CC-493B-B578-518B07AF2A61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63547B0F-59CC-493B-B578-518B07AF2A61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63547B0F-59CC-493B-B578-518B07AF2A61}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {20A52532-73EB-4A84-A08C-5BE1EC993C03}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,6 @@
+F:\Arbitrage Cracks\WPLib\bin\Debug\WPLib.dll
+F:\Arbitrage Cracks\WPLib\bin\Debug\WPLib.pdb
+F:\Arbitrage Cracks\WPLib\obj\Debug\WPLib.csprojResolveAssemblyReference.cache
+F:\Arbitrage Cracks\WPLib\obj\Debug\WPLib.csproj.CoreCompileInputs.cache
+F:\Arbitrage Cracks\WPLib\obj\Debug\WPLib.dll
+F:\Arbitrage Cracks\WPLib\obj\Debug\WPLib.pdb

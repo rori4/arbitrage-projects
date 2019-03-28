@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Program Files (x86)\Westernpips\Westernpips Trade Monitor 3.7 Exclusive\WPLib.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A729BF32-1E12-474C-8EC7-DB057AB3CFDB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>WPLib</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Core" />
+    <Reference Include="System" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="WPLib\WPSecurity.cs" />
+    <Compile Include="WPLib\WesternPips\Trader.cs" />
+    <Compile Include="WPLib\WesternPips\ProviderContract.cs" />
+    <Compile Include="WPLib\WesternPips\InstrumentsContract.cs" />
+    <Compile Include="WPLib\WesternPips\ILicenseService.cs" />
+    <Compile Include="WPLib\WesternPips\ILicenseServiceChannel.cs" />
+    <Compile Include="WPLib\WesternPips\LicenseServiceClient.cs" />
+    <Compile Include="WPBase\DataConnectorBase.cs" />
+    <Compile Include="WPBase\IDataConnector.cs" />
+    <Compile Include="WPBase\InstrumentInfo.cs" />
+    <Compile Include="WPBase\ISecurityProvider.cs" />
+    <Compile Include="WPBase\ITradeDataWriter.cs" />
+    <Compile Include="WPBase\MarketDataRecord.cs" />
+    <Compile Include="WPBase\SecurityInfo.cs" />
+    <Compile Include="WPBase\UserData.cs" />
+    <Compile Include="WPBase\SessionParameters.cs" />
+    <Compile Include="WPBase\TradeInfo.cs" />
+    <Compile Include="WPBase\WPManager.cs" />
+    <Compile Include="IQFeedDataConnector\IQFeed.cs" />
+    <Compile Include="MemoryDataWriter\Writer.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

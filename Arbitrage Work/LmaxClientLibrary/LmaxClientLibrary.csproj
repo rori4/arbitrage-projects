@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\range\Desktop\Arbitrage\new hope\ipcbus\LmaxClientLibrary.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{63547B0F-59CC-493B-B578-518B07AF2A61}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>LmaxClientLibrary</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <ApplicationVersion>1.8.2.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Com.Lmax.Api</RootNamespace>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IRequest.cs" />
+    <Compile Include="ISubscriptionRequest.cs" />
+    <Compile Include="SubscriptionRequest.cs" />
+    <Compile Include="ISession.cs" />
+    <Compile Include="FailureResponse.cs" />
+    <Compile Include="OnSuccess.cs" />
+    <Compile Include="OnFailure.cs" />
+    <Compile Include="OnLogin.cs" />
+    <Compile Include="OnOrderBookEvent.cs" />
+    <Compile Include="OnOrderBookStatusEvent.cs" />
+    <Compile Include="OnException.cs" />
+    <Compile Include="OnSessionDisconnected.cs" />
+    <Compile Include="OnInstructionResponse.cs" />
+    <Compile Include="OnPositionEvent.cs" />
+    <Compile Include="OnExecutionEvent.cs" />
+    <Compile Include="OnOrderEvent.cs" />
+    <Compile Include="OnRejectionEvent.cs" />
+    <Compile Include="OnAccountStateEvent.cs" />
+    <Compile Include="OnHistoricMarketDataEvent.cs" />
+    <Compile Include="OnMarketDataEvent.cs" />
+    <Compile Include="OnHeartbeatReceivedEvent.cs" />
+    <Compile Include="OnSearchResponse.cs" />
+    <Compile Include="OnUriResponse.cs" />
+    <Compile Include="TimeInForce.cs" />
+    <Compile Include="LmaxApi.cs" />
+    <Compile Include="LoginRequest.cs" />
+    <Compile Include="ProductType.cs" />
+    <Compile Include="LogoutRequest.cs" />
+    <Compile Include="Account\Account.cs" />
+    <Compile Include="Account\AccountDetails.cs" />
+    <Compile Include="Account\AccountStateEvent.cs" />
+    <Compile Include="Account\AccountStateRequest.cs" />
+    <Compile Include="Account\AccountSubscriptionRequest.cs" />
+    <Compile Include="Account\HeartbeatRequest.cs" />
+    <Compile Include="Account\HeartbeatSubscriptionRequest.cs" />
+    <Compile Include="Internal\Handler.cs" />
+    <Compile Include="Internal\DefaultHandler.cs" />
+    <Compile Include="Internal\IConnection.cs" />
+    <Compile Include="Internal\Connection.cs" />
+    <Compile Include="Internal\DateTimeUtil.cs" />
+    <Compile Include="Internal\EventStreamHandler.cs" />
+    <Compile Include="Internal\IHttpInvoker.cs" />
+    <Compile Include="Internal\HttpInvoker.cs" />
+    <Compile Include="Internal\ISaxContentHandler.cs" />
+    <Compile Include="Internal\IXmlParser.cs" />
+    <Compile Include="Internal\ListHandler.cs" />
+    <Compile Include="Internal\Response.cs" />
+    <Compile Include="Internal\SaxContentHandler.cs" />
+    <Compile Include="Internal\SaxParser.cs" />
+    <Compile Include="Internal\Session.cs" />
+    <Compile Include="Internal\UnexpectedHttpStatusCodeException.cs" />
+    <Compile Include="Internal\Events\AccountStateBuilder.cs" />
+    <Compile Include="Internal\Events\ExecutionBuilder.cs" />
+    <Compile Include="Internal\Events\OrderBuilder.cs" />
+    <Compile Include="Internal\Events\PositionBuilder.cs" />
+    <Compile Include="Internal\Protocol\AccountStateEventHandler.cs" />
+    <Compile Include="Internal\Protocol\WalletsHandler.cs" />
+    <Compile Include="Internal\Protocol\EventHandler.cs" />
+    <Compile Include="Internal\Protocol\ExecutionEventHandler.cs" />
+    <Compile Include="Internal\Protocol\HeartbeatEventHandler.cs" />
+    <Compile Include="Internal\Protocol\HistoricMarketDataEventHandler.cs" />
+    <Compile Include="Internal\Protocol\URLHandler.cs" />
+    <Compile Include="Internal\Protocol\InstructionRejectedEventHandler.cs" />
+    <Compile Include="Internal\Protocol\LoginResponseHandler.cs" />
+    <Compile Include="Internal\Protocol\OrderBookEventHandler.cs" />
+    <Compile Include="Internal\Protocol\OrderBookStatusEventHandler.cs" />
+    <Compile Include="Internal\Protocol\OrderResponseHandler.cs" />
+    <Compile Include="Internal\Protocol\OrderStateEventHandler.cs" />
+    <Compile Include="Internal\Protocol\PositionEventHandler.cs" />
+    <Compile Include="Internal\Protocol\SearchResponseHandler.cs" />
+    <Compile Include="Internal\Xml\IStructuredWriter.cs" />
+    <Compile Include="Internal\Xml\XmlStructuredWriter.cs" />
+    <Compile Include="MarketData\IHistoricMarketDataRequest.cs" />
+    <Compile Include="MarketData\AggregateHistoricMarketDataRequest.cs" />
+    <Compile Include="MarketData\Option.cs" />
+    <Compile Include="MarketData\HistoricMarketDataSubscriptionRequest.cs" />
+    <Compile Include="MarketData\Format.cs" />
+    <Compile Include="MarketData\Resolution.cs" />
+    <Compile Include="MarketData\TopOfBookHistoricMarketDataRequest.cs" />
+    <Compile Include="Order\AmendStopLossProfitRequest.cs" />
+    <Compile Include="Order\CancelOrderRequest.cs" />
+    <Compile Include="Order\Execution.cs" />
+    <Compile Include="Order\ExecutionSubscriptionRequest.cs" />
+    <Compile Include="Order\IOrderSpecification.cs" />
+    <Compile Include="Order\OrderSpecification.cs" />
+    <Compile Include="Order\LimitOrderSpecification.cs" />
+    <Compile Include="Order\MarketOrderSpecification.cs" />
+    <Compile Include="Order\Order.cs" />
+    <Compile Include="Order\OrderType.cs" />
+    <Compile Include="Order\OrderSubscriptionRequest.cs" />
+    <Compile Include="Order\StopOrderSpecification.cs" />
+    <Compile Include="OrderBook\HistoricContentType.cs" />
+    <Compile Include="OrderBook\Instrument.cs" />
+    <Compile Include="OrderBook\UnderlyingInfo.cs" />
+    <Compile Include="OrderBook\CalendarInfo.cs" />
+    <Compile Include="OrderBook\RiskInfo.cs" />
+    <Compile Include="OrderBook\OrderBookInfo.cs" />
+    <Compile Include="OrderBook\ContractInfo.cs" />
+    <Compile Include="OrderBook\CommercialInfo.cs" />
+    <Compile Include="OrderBook\OrderBookEvent.cs" />
+    <Compile Include="OrderBook\OrderBookStatusEvent.cs" />
+    <Compile Include="OrderBook\OrderBookStatus.cs" />
+    <Compile Include="OrderBook\OrderBookStatusSubscriptionRequest.cs" />
+    <Compile Include="OrderBook\OrderBookSubscriptionRequest.cs" />
+    <Compile Include="OrderBook\PricePoint.cs" />
+    <Compile Include="OrderBook\SearchRequest.cs" />
+    <Compile Include="Position\PositionEvent.cs" />
+    <Compile Include="Position\PositionSubscriptionRequest.cs" />
+    <Compile Include="Reject\InstructionRejectedEvent.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
